@@ -1,0 +1,29 @@
+.card-img-top {
+    max-height: 350px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    transition: transform 0.3s ease;
+}
+
+    .card-img-top:hover {
+        transform: scale(1.03);
+    }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+body.d-flex.flex-column.min-vh-100 {
+    min-height: 100vh;
+}
+
+main.flex-grow-1 {
+    flex-grow: 1;
+}
+
+footer {
+    margin-top: auto;
+}
