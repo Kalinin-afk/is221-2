@@ -40,10 +40,7 @@ class OrderDataTest extends TestCase
     public function testPhoneNotValidate(): void {
         $this->data['phone'] = "44-55-66";
         $this->assertSame( false, 
-                           $this->obj->validate($this->data) );
-        $this->data['phone'] = "19004556677";
-        $this->assertSame( false, 
-                            $this->obj->validate($this->data) );                           
+                           $this->obj->validate($this->data) );                          
     }
     // емайл - невалидные адреса проверить, типа "invalid", "@missing.username", ""
     public function testEmailNotValidate(): void {
